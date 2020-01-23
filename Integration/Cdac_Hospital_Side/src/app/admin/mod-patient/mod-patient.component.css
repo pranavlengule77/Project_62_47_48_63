@@ -1,0 +1,21 @@
+#tablepat
+{
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+.modp{
+    padding-top: 3em;
+    padding-bottom: 26em;;
+}
+
+#form1{
+    margin-left: 33em;
+  }
+
+.alert{
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CDAC_POLDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="appointment_data">
+    <Key>
+      <PropertyRef Name="appointment_id" />
+    </Key>
+    <Property Name="appointment_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mobile_no" Type="Int64" Nullable="false" />
+    <Property Name="doctor_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="appointment_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="appointment_date" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="appointment_data1" Relationship="Self.FK_appointment_data_appointment_data" FromRole="appointment_data" ToRole="appointment_data1" />
+    <NavigationProperty Name="appointment_data2" Relationship="Self.FK_appointment_data_appointment_data" FromRole="appointment_data1" ToRole="appointment_data" />
+    <NavigationProperty Name="doctor_data" Relationship="Self.FK_appointment_data_doctor_data" FromRole="appointment_data" ToRole="doctor_data" />
+  </EntityType>
+  <EntityType Name="doctor_data">
+    <Key>
+      <PropertyRef Name="doctor_id" />
+    </Key>
+    <Property Name="doctor_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="doctor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="speciality_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="visiting_hrs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="education" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="appointment_data" Relationship="Self.FK_appointment_data_doctor_data" FromRole="doctor_data" ToRole="appointment_data" />
+    <NavigationProperty Name="speciality_data" Relationship="Self.FK_doctor_data_speciality_data" FromRole="doctor_data" ToRole="speciality_data" />
+  </EntityType>
+  <EntityType Name="login_table">
+    <Key>
+      <PropertyRef Name="login_id" />
+    </Key>
+    <Property Name="login_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="login_password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="patient_data">
+    <Key>
+      <PropertyRef Name="mobile_no" />
+    </Key>
+    <Property Name="mobile_no" Type="Int64" Nullable="false" />
+    <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dob" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="blood_group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="speciality_data">
+    <Key>
+      <PropertyRef Name="speciality_name" />
+    </Key>
+    <Property Name="speciality_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="doctor_data" Relationship="Self.FK_doctor_data_speciality_data" FromRole="speciality_data" ToRole="doctor_data" />
+  </EntityType>
+  <EntityType Name="reception_view">
+    <Key>
+      <PropertyRef Name="appointment_id" />
+      <PropertyRef Name="patient_name" />
+      <PropertyRef Name="doctor_name" />
+      <PropertyRef Name="appointment_date" />
+      <PropertyRef Name="appointment_status" />
+      <PropertyRef Name="speciality_name" />
+      <PropertyRef Name="visiting_hrs" />
+      <PropertyRef Name="doctor_id" />
+      <PropertyRef Name="mobile_no" />
+    </Key>
+    <Property Name="appointment_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="doctor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="appointment_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="appointment_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="speciality_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="visiting_hrs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="doctor_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="mobile_no" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="specialities_view">
+    <Key>
+      <PropertyRef Name="speciality_name" />
+      <PropertyRef Name="doctor_name" />
+      <PropertyRef Name="visiting_hrs" />
+      <PropertyRef Name="education" />
+      <PropertyRef Name="doctor_id" />
+      <PropertyRef Name="description" />
+    </Key>
+    <Property Name="speciality_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="doctor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="visiting_hrs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="education" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="doctor_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_appointment_data_appointment_data">
+    <End Role="appointment_data" Type="Self.appointment_data" Multiplicity="1" />
+    <End Role="appointment_data1" Type="Self.appointment_data" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="appointment_data">
+        <PropertyRef Name="appointment_id" />
+      </Principal>
+      <Dependent Role="appointment_data1">
+        <PropertyRef Name="appointment_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_appointment_data_doctor_data">
+    <End Role="doctor_data" Type="Self.doctor_data" Multiplicity="1" />
+    <End Role="appointment_data" Type="Self.appointment_data" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="doctor_data">
+        <PropertyRef Name="doctor_id" />
+      </Principal>
+      <Dependent Role="appointment_data">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doctor_data_speciality_data">
+    <End Role="speciality_data" Type="Self.speciality_data" Multiplicity="1" />
+    <End Role="doctor_data" Type="Self.doctor_data" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="speciality_data">
+        <PropertyRef Name="speciality_name" />
+      </Principal>
+      <Dependent Role="doctor_data">
+        <PropertyRef Name="speciality_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CDAC_POLDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="appointment_data" EntityType="Self.appointment_data" />
+    <EntitySet Name="doctor_data" EntityType="Self.doctor_data" />
+    <EntitySet Name="login_table" EntityType="Self.login_table" />
+    <EntitySet Name="patient_data" EntityType="Self.patient_data" />
+    <EntitySet Name="speciality_data" EntityType="Self.speciality_data" />
+    <EntitySet Name="reception_view" EntityType="Self.reception_view" />
+    <EntitySet Name="specialities_view" EntityType="Self.specialities_view" />
+    <AssociationSet Name="FK_appointment_data_appointment_data" Association="Self.FK_appointment_data_appointment_data">
+      <End Role="appointment_data" EntitySet="appointment_data" />
+      <End Role="appointment_data1" EntitySet="appointment_data" />
+    </AssociationSet>
+    <AssociationSet Name="FK_appointment_data_doctor_data" Association="Self.FK_appointment_data_doctor_data">
+      <End Role="doctor_data" EntitySet="doctor_data" />
+      <End Role="appointment_data" EntitySet="appointment_data" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doctor_data_speciality_data" Association="Self.FK_doctor_data_speciality_data">
+      <End Role="speciality_data" EntitySet="speciality_data" />
+      <End Role="doctor_data" EntitySet="doctor_data" />
+    </AssociationSet>
+    <EntitySet Name="appointment_id_factory" EntityType="CDAC_POLDModel.appointment_id_factory" />
+  </EntityContainer>
+  <EntityType Name="appointment_id_factory">
+    <Key>
+      <PropertyRef Name="appointment_id" />
+    </Key>
+    <Property Name="appointment_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

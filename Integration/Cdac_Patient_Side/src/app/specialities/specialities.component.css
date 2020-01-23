@@ -1,0 +1,51 @@
+#container{
+  display: grid;
+  grid-template-columns:70% 30%;
+  padding-bottom: 3em;
+}
+
+.vnb{
+   margin-top: 2em;
+}
+
+a{
+  text-align: center;
+  color: dimgray;
+  
+}
+
+h2{
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.nav-link
+{
+  background-color: lightgrey;
+  margin-top: 1em;
+  margin-right: 1em;
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tab-pane{
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-right: 3em;
+}
+
+h6{
+  margin-top: 1em;
+  text-align: justify;
+}
+
+.generalgrid{
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  grid-template-rows: 100%;
+}
+
+.msg{
+  color: red;
+}

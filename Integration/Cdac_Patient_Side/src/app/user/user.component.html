@@ -1,0 +1,78 @@
+<div class="con">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="col-md-3 mb-3 px-4">
+        <label for="validationDefault01">Name</label>
+        <input [(ngModel)]="oldPatient.patient_name" name="patient_name" type="text" class="form-control" id="validationDefault01" disabled>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-3 mb-3 px-4">
+        <label for="validationDefault03">Email Id</label>
+        <input [(ngModel)]="oldPatient.email_id" name="email_id" type="email" class="form-control" id="validationDefault03" required>
+      </div>
+      <div class="col-md-3 mb-3 px-4">
+        <label for="validationDefault04">Mobile No</label>
+        <input [(ngModel)]="oldPatient.mobile_no" name="mobile_no" type="number" class="form-control" id="validationDefault04" disabled>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-3 mb-3 px-4">
+        <label for="validationDefault05">D.O.B.</label>
+        <input [(ngModel)]="birthDate" name="dob" type="text" class="form-control" id="validationDefault05" disabled>
+      </div>
+      <div class="col-md-3 mb-3 px-4">
+        <label for="validationDefault06">Gender</label>
+        <select [(ngModel)]="oldPatient.gender" name="gender" class="custom-select" id="validationDefault06" disabled>
+          <option selected disabled value="">Choose...</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-3 mb-3 px-4">
+        <label for="validationDefault07">Blood Group</label>
+        <select [(ngModel)]="oldPatient.blood_group" name="blood_group" class="custom-select" id="validationDefault07" disabled>
+          <option selected disabled value="">Choose...</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </div>
+      <div class="col-md-3 mb-3 px-4">
+        <label for="validationDefault08">Address</label>
+        <input [(ngModel)]="oldPatient.address" name="address" type="text" class="form-control" id="validationDefault08" required>
+      </div>
+    </div>
+        <div class="form-row">
+          <div class="col-md-3 mb-3 px-4">
+            <label for="validationDefault09">Old Password</label>
+            <input [(ngModel)]="oldPassword" name="oldPassword" type="text" class="form-control" id="validationDefault09" required>
+          </div>
+        </div>  
+        <div class="form-row">
+            <div class="col-md-3 mb-3 px-4">
+              <label for="validationDefault03">New Password</label>
+              <input [(ngModel)]="newPassword" name="newPassword" type="email" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3 mb-3 px-4">
+              <label for="validationDefault04">Confirm Password</label>
+              <input [(ngModel)]="confirmPassword" name="confirmPassword" type="text" class="form-control" id="validationDefault04" required>
+            </div> 
+        </div>
+      <div>
+        <div class="form-row">
+          <div class="col-md-3 mb-3 px-4">
+            <button class="btn btn-primary btn-block" type="submit">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </form>
+</div>
+

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CDAC_POLDModelStoreContainer" CdmEntityContainer="CDAC_POLDEntities">
+    <EntitySetMapping Name="appointment_data">
+      <EntityTypeMapping TypeName="CDAC_POLDModel.appointment_data">
+        <MappingFragment StoreEntitySet="appointment_data">
+          <ScalarProperty Name="appointment_id" ColumnName="appointment_id" />
+          <ScalarProperty Name="mobile_no" ColumnName="mobile_no" />
+          <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+          <ScalarProperty Name="appointment_status" ColumnName="appointment_status" />
+          <ScalarProperty Name="appointment_date" ColumnName="appointment_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="doctor_data">
+      <EntityTypeMapping TypeName="CDAC_POLDModel.doctor_data">
+        <MappingFragment StoreEntitySet="doctor_data">
+          <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+          <ScalarProperty Name="doctor_name" ColumnName="doctor_name" />
+          <ScalarProperty Name="speciality_name" ColumnName="speciality_name" />
+          <ScalarProperty Name="visiting_hrs" ColumnName="visiting_hrs" />
+          <ScalarProperty Name="education" ColumnName="education" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="login_table">
+      <EntityTypeMapping TypeName="CDAC_POLDModel.login_table">
+        <MappingFragment StoreEntitySet="login_table">
+          <ScalarProperty Name="login_id" ColumnName="login_id" />
+          <ScalarProperty Name="login_password" ColumnName="login_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patient_data">
+      <EntityTypeMapping TypeName="CDAC_POLDModel.patient_data">
+        <MappingFragment StoreEntitySet="patient_data">
+          <ScalarProperty Name="mobile_no" ColumnName="mobile_no" />
+          <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="blood_group" ColumnName="blood_group" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="speciality_data">
+      <EntityTypeMapping TypeName="CDAC_POLDModel.speciality_data">
+        <MappingFragment StoreEntitySet="speciality_data">
+          <ScalarProperty Name="speciality_name" ColumnName="speciality_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reception_view">
+      <EntityTypeMapping TypeName="CDAC_POLDModel.reception_view">
+        <MappingFragment StoreEntitySet="reception_view">
+          <ScalarProperty Name="mobile_no" ColumnName="mobile_no" />
+          <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+          <ScalarProperty Name="appointment_id" ColumnName="appointment_id" />
+          <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+          <ScalarProperty Name="doctor_name" ColumnName="doctor_name" />
+          <ScalarProperty Name="appointment_date" ColumnName="appointment_date" />
+          <ScalarProperty Name="appointment_status" ColumnName="appointment_status" />
+          <ScalarProperty Name="speciality_name" ColumnName="speciality_name" />
+          <ScalarProperty Name="visiting_hrs" ColumnName="visiting_hrs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="specialities_view">
+      <EntityTypeMapping TypeName="CDAC_POLDModel.specialities_view">
+        <MappingFragment StoreEntitySet="specialities_view">
+          <ScalarProperty Name="speciality_name" ColumnName="speciality_name" />
+          <ScalarProperty Name="doctor_name" ColumnName="doctor_name" />
+          <ScalarProperty Name="visiting_hrs" ColumnName="visiting_hrs" />
+          <ScalarProperty Name="education" ColumnName="education" />
+          <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="appointment_id_factory">
+      <EntityTypeMapping TypeName="CDAC_POLDModel.appointment_id_factory">
+        <MappingFragment StoreEntitySet="appointment_id_factory">
+          <ScalarProperty Name="appointment_id" ColumnName="appointment_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

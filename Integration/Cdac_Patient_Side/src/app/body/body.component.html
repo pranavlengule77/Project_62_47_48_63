@@ -1,0 +1,22 @@
+<div id="container">
+  <div>
+    <app-body-carousel></app-body-carousel>
+  </div>
+  <div>
+    <form class="form-signin align-items-center mt-3" (ngSubmit)="onSubmit()">
+      <img id="login-logo" src="../assets/images/hiclipart.com.png" />
+      <h3 class="mb-3 font-weight-normal">Please sign in</h3>
+      <label for="inputMobile" class="sr-only">Mobile No</label>
+      <input [(ngModel)]="mobileNo" name="mobileNo" type="number" id="inputMobile" class="form-control" placeholder="Mobile No" required/>
+      <br>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input [(ngModel)]="password" name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required/>
+      <br>
+      <div *ngIf="statusFlag" class="alert alert-danger" role="alert">
+        <h6 style="text-align: center;">{{status}}</h6> 
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit"> Sign in </button> <br>
+      <button class="btn btn-lg btn-outline-primary btn-block" routerLink="registration"> Register </button>
+    </form>
+  </div>
+</div>

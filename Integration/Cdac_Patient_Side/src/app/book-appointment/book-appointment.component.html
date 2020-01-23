@@ -1,0 +1,55 @@
+<div id="container">
+  <div>
+    <div class="row">
+      <div class="col-2">
+        <img src="../../assets/images/hiclipart.com.png" alt="A doctor image" />
+      </div>
+      <div class="col-6 mt-5">
+        <h3>
+          <strong>Dr. {{ doctor.doctor_name }} </strong>
+        </h3>
+        <h6>Visiting Hours: {{ doctor.visiting_hrs }}</h6>
+        <h5>{{ doctor.education }}</h5>
+      </div>
+    </div>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="validationDefault02">Appointment Date</label>
+        <input type="date" name="appointmentDate" [(ngModel)]="appointmentDate" class="form-control" id="validationDefault01" required/>
+      </div>
+      <br>
+      <button class="btn btn-lg btn-primary btn-block">Book Appointment</button>
+    </form>
+    <br>
+    <div *ngIf="statusFlag" class="alert alert-success ml-4" role="alert">
+      <h6 style="text-align: center;">{{status}}</h6> 
+    </div>
+  </div>
+  <div>
+    <div class="px-4 mt-3">
+      <h4>Reminder</h4>
+      <div class="rem">
+        <marquee direction="up" behaviour="scroll" onmouseover="this.stop();" onmouseout="this.start();">
+          <div class="reminderbox" *ngFor="let temp of data">
+            <span>{{ temp.appointment_id }} </span>
+            <span>Dr. {{ temp.doctor_name }} </span> at 
+            <span>{{ temp.appointment_date | date: "dd/MM/yyyy" }}</span>
+            <span >
+              <ng-container *ngIf = "temp.appointment_status=='NC'; else elseIfTemplate">
+                <td style="color: orange;">Not Confirmed</td>
+              </ng-container>
+              <ng-template #elseIfTemplate>
+                <ng-container *ngIf = "temp.appointment_status == 'C'; else elseTemplate">
+                  <td style="color: green;">Confirmed</td>
+                </ng-container>
+              </ng-template>
+              <ng-template #elseTemplate>
+                <td style="color: red;">Cancelled</td>
+              </ng-template>
+            </span>
+          </div>
+        </marquee>
+      </div>
+    </div>
+  </div>
+</div>

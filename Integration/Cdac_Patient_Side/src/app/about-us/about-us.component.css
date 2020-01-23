@@ -1,0 +1,28 @@
+#about{
+  max-width: 100%;
+}
+
+#container{
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+.par{
+  margin-top: 1em;
+}
+
+.ptx{
+  font-size: large;
+  font: italic;
+  font-weight: bold;
+}
+
+body{
+  position: relative;
+}
+
+h2{
+  text-decoration: underline;
+  font-style: italic;
+}

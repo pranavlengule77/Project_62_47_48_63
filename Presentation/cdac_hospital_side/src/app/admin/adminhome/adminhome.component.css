@@ -1,0 +1,26 @@
+#container{
+    background-image: url('../../../assets/images/1.jpg');
+    background-size: 100% 100%;
+    width: 101%;
+}
+
+footer{
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.con{
+    padding: 15em;
+}
+
+#smh{
+    margin-left: 1em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    color: dimgray;
+    letter-spacing: 3px;
+  }
+  

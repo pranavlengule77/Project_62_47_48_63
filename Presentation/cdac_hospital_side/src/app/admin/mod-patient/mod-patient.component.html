@@ -1,0 +1,21 @@
+<div id="searchpatient">
+    <input type="text" id="find" placeholder="Enter Patient's ID" name="find" [(ngModel)]= "patienNameSearch" />
+    <input type="submit" class="btn btn-primary" id="search" value="search"  (click)="search()"/>
+</div>
+
+<div id="patientlog">
+    <table class="table table-bordered table-striped table-hover" id="tablepat" *ngIf="found">
+        <thead class="thead-dark">
+            <tr>
+                <th>Patient Name</th>
+                <th>Deletion </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ patientName }}</td>
+                <td><button class="btn btn-secondary" (click)="delete()"> Delete Patient</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

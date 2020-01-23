@@ -1,0 +1,28 @@
+<div class="tablediv">
+    <div *ngIf="!statusFlag" class="alert alert-info" role="alert">{{status}}</div>
+    <table class="table table-striped table-bordered" *ngIf="found">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Appointment ID</th>
+                <th scope="col">Patient Name</th>
+                <th scope="col" colspan="2" style="text-align: center;">Session</th>
+            </tr>
+        </thead>
+        <tbody class="thead-light">
+            <tr *ngFor="let patient of todayData;">
+                <td>{{ patient.appointment_id }}</td>
+                <td>{{ patient.patient_name }}</td>
+                <td>
+                    <button class="btn btn-secondary" id="{{'buttonStart' + patient.appointment_id}}"
+                        (click)="startAppointment(patient.appointment_id)"> Start </button>
+                    <span id="{{'time' + patient.appointment_id}}"></span>
+                </td>
+                <td>
+                    <button class="btn btn-secondary" id="{{'buttonCancel' + patient.appointment_id}}"
+                        (click)="cancelAppointment(patient.appointment_id)"> Cancel </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div *ngIf="statusFlag" class="alert alert-info" role="alert">{{message}}</div>
+</div>

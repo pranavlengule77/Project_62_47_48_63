@@ -1,0 +1,23 @@
+.layout{
+    display: grid;
+    grid-template-columns: 7.5fr 2.5fr;
+    height: 500px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+nav {
+    background: #2D2E2E;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+}
+.sidebar{
+    background: gray;
+}

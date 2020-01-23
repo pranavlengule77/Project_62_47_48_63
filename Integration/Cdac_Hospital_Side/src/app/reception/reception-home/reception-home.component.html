@@ -1,0 +1,48 @@
+<div class="reception_view">
+  <form id="form1" class="form-inline mt-md- p-5">
+    <input [(ngModel)]="appointmentId" name="searching" class="form-control mr-sm-2" type="text"
+      placeholder="Enter Appointment ID" aria-label="Enter Appointment ID">
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="searchPatient()">Search Patient</button>
+  </form>
+  
+  <div class="container">
+    <div *ngIf="notFoundFlag" class="alert alert-danger" role="alert">{{notFound}}</div>
+    <div class="table-responsive" >
+      <table class="table table-hover table-bordered" *ngIf="searchFlag">
+        <thead>
+          <tr>
+            <th>AppointmentId</th>
+            <th>PatientName</th>
+            <th>Doctorsname</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Speciality</th>
+            <th>AppointmentStatus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ appointment.appointment_id }}</td>
+            <td>{{ appointment.patient_name }}</td>
+            <td>{{ appointment.doctor_name }}</td>
+            <td>{{ appointment.visiting_hrs }}</td>
+            <td>{{ appointment.appointment_date | date:'longDate' }}</td>
+            <td>{{ appointment.speciality_name }}</td>
+            
+            <ng-container *ngIf = "appointment.appointment_status=='NC'; else elseIfTemplate">
+              <td style="color: orange;">Not Confirmed</td>
+            </ng-container>
+            <ng-template #elseIfTemplate>
+              <ng-container *ngIf = "appointment.appointment_status == 'C'; else elseTemplate">
+                <td style="color: green;">Confirmed</td>
+              </ng-container>
+            </ng-template>
+            <ng-template #elseTemplate>
+              <td style="color: red;">Cancelled</td>
+            </ng-template>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

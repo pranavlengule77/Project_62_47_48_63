@@ -1,0 +1,20 @@
+#about{
+  max-width: 100%;
+}
+
+#container{
+  margin-bottom: 3em;
+}
+
+.par{
+  margin-top: 1em;
+}
+
+.ptx{
+  font-size: large;
+  font: italic;
+}
+
+body{
+  position: relative;
+}

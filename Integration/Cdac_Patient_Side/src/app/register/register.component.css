@@ -1,0 +1,11 @@
+.container{
+    max-width: 65%;
+    margin-left: 30em;
+    padding-bottom: 6em;
+    padding-top: 3em;
+}
+
+.btn{
+    margin-left: 5em;
+    width: 30%;
+}

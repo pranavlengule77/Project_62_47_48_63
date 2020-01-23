@@ -1,0 +1,208 @@
+<div id="container">
+  <div>
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-general-surgery" role="tabpanel"
+        aria-labelledby="v-general-surgery-tab" >
+        <div>
+          <div>
+            <p class="h4">GENERAL SURGERY</p>
+            <p id="par1">"A good surgeon knows how to operate. A better surgeon knows when to operate and the best
+              surgeon knows when NOT to operate." The Department of General Surgery is manned by consultant surgeons
+              highly qualified and well trained in India & abroad having great experience in open and laparoscopy
+              surgery. There is 24 hours cover for all surgical emergencies including all sorts of trauma. The
+              department encompasses preventive, diagnostic and therapeutic conservative and / or surgical intervention.
+            </p>
+            <p id="par1">Doing almost 2000 laparoscopy cases per year including routines such as Cholecystectomy,
+              appendectomy etc. as well as advanced laparoscopic procedures like Spleenectomy, Nephrectomy,
+              Adrenalectomy, Thymectomy, Colorectal surgery, Fundoplication, Hernia and Obesity surgeries.</p>
+          </div>
+          <div >
+            <div *ngFor="let data of fetcheddata" class="generalgrid">
+              <div> <img src="../../assets/images/hiclipart.com.png" alt="A doctor image"/><br> </div>
+              <div class="mt-4">
+              {{data.doctorname}} <br>
+              {{data.education}} <br>
+              {{data.visitinghrsfrom | date:'shortTime'}} to {{data.visitinghrsto | date:'shortTime' }}<br>
+              </div>
+              <div class="mt-5"><button class="btn btn-primary" (click)='bookAppointment()'>Book Appointment</button> </div>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-ent" role="tabpanel" aria-labelledby="v-ent-tab" >
+        <div>
+          <p class="h4">ENT</p>
+          <p id="par1">The Ear Nose & Throat Department of Sahyadri Hospitals provides high quality care to patients,
+            not only belonging to the primary problems in ENT but also to patients from Department of Neurology,
+            Ophthalmology, Endocrinology, Facio-maxillary Surgery, Plastic Surgery & Oncology.</p>
+          </div>
+
+          <div >
+            <div *ngFor="let data of fetcheddata" class="generalgrid">
+              <div> <img src="../../assets/images/hiclipart.com.png" alt="A doctor image"/><br> </div>
+              <div class="mt-4">
+              {{data.doctorname}} <br>
+              {{data.education}} <br>
+              {{data.visitinghrsfrom | date:'shortTime'}} to {{data.visitinghrsto | date:'shortTime' }}<br>
+              </div>
+              <div class="mt-5"><button class="btn btn-primary" (click)='bookAppointment()'>Book Appointment</button> </div>
+            </div>
+          </div>
+
+
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-neurologist" role="tabpanel" aria-labelledby="v-neurologist-tab">
+        <div>
+          <p class="h4">NEUROLOGY</p>
+          <p id="par1">The department of Neurology at Sahyadri Hospitals is a highly integrated, collaborative
+            department of adult and paediatric neurologists who specialize in the research, diagnosis and treatment of a
+            plethora of conditions and diseases affecting the nervous system.</p>
+          <p id="par1">This department works in close coordination with other departments like, Neurosurgery, Behavioral
+            Sciences, Rehabilitation, Metabolic experts, Electrophysiology lab and Imaging and provides Comprehensive
+            Care to encompass the whole spectrum of Neurology.</p>
+        </div>
+        <div >
+          <div *ngFor="let data of fetcheddata" class="generalgrid">
+            <div> <img src="../../assets/images/hiclipart.com.png" alt="A doctor image"/><br> </div>
+            <div class="mt-4">
+            {{data.doctorname}} <br>
+            {{data.education}} <br>
+            {{data.visitinghrsfrom | date:'shortTime'}} to {{data.visitinghrsto | date:'shortTime' }}<br>
+            </div>
+            <div class="mt-5"><button class="btn btn-primary" (click)='bookAppointment()'>Book Appointment</button> </div>
+          </div>
+        </div>
+
+
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-pulmonology" role="tabpanel" aria-labelledby="v-pulmonology-tab">
+        <div>
+          <p class="h4">PULMONOLOGY</p>
+          <p id="par1">Pulmonology is a medical speciality that deals with diseases involving the respiratory tract.
+            Pulmonology also known as chest medicine and respiratory medicine in some countries and areas. Pulmonology
+            is considered a branch of internal medicine and often involves managing patients who need life support and
+            mechanical ventilation. Pulmonologists are specially trained in diseases and conditions of the chest,
+            particularly pneumonia, asthma, tuberculosis, emphysema, and complicated chest infections.</p>
+        </div>
+        <div >
+          <div *ngFor="let data of fetcheddata" class="generalgrid">
+            <div> <img src="../../assets/images/hiclipart.com.png" alt="A doctor image"/><br> </div>
+            <div class="mt-4">
+            {{data.doctorname}} <br>
+            {{data.education}} <br>
+            {{data.visitinghrsfrom | date:'shortTime'}} to {{data.visitinghrsto | date:'shortTime' }}<br>
+            </div>
+            <div class="mt-5"><button class="btn btn-primary" (click)='bookAppointment()'>Book Appointment</button> </div>
+          </div>
+        </div>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-nephrologist" role="tabpanel" aria-labelledby="v-nephrologist-tab">
+        <div>
+          <p class="h4">NEPHROLOGY / KIDNEY CARE</p>
+          <p id="par1">Sahyadri plays an important role in offering comprehensive care for patients with kidney disease
+            including Renal induced Hypertensive Emergencies. The Department of Nephrology is a Super-Specialty
+            department which deals with the medical management of kidney diseases.</p>
+        </div>
+        <div >
+          <div *ngFor="let data of fetcheddata" class="generalgrid">
+            <div> <img src="../../assets/images/hiclipart.com.png" alt="A doctor image"/><br> </div>
+            <div class="mt-4">
+            {{data.doctorname}} <br>
+            {{data.education}} <br>
+            {{data.visitinghrsfrom | date:'shortTime'}} to {{data.visitinghrsto | date:'shortTime' }}<br>
+            </div>
+            <div class="mt-5"><button class="btn btn-primary" id="{{data.doctorname}}+neph" (click)='bookAppointment()'>Book Appointment</button> </div>
+          </div>
+        </div>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-urologist" role="tabpanel" aria-labelledby="v-urologist-tab">
+        <div>
+          <p class="h4">UROLOGY</p>
+          <p id="par1">The department of Urology deals with all surgical conditions with Kidneys, Ureters, urinary
+            bladder, urethra in males and females and also prostate glands in the male. Urology Department works in
+            close association with Nephrologists, especially in the Kidney Transplant Unit.</p>
+          <p id="par1">Urology, also known as genitourinary surgery, is the branch of medicine that focuses on surgical
+            and medical diseases of the male and female urinary tract system and the male reproductive organs. The
+            organs under the domain of urology include the kidneys, adrenal glands, ureters, urinary bladder, urethra,
+            and the male reproductive organs (testes, epididymis, vas deferens, seminal vesicles, prostate, and penis).
+          </p>
+        </div>
+        <div >
+          <div *ngFor="let data of fetcheddata" class="generalgrid">
+            <div> <img src="../../assets/images/hiclipart.com.png" alt="A doctor image"/><br> </div>
+            <div class="mt-4">
+            {{data.doctorname}} <br>
+            {{data.education}} <br>
+            {{data.visitinghrsfrom | date:'shortTime'}} to {{data.visitinghrsto | date:'shortTime' }}<br>
+            </div>
+            <div class="mt-5"><button class="btn btn-primary" (click)='bookAppointment()'>Book Appointment</button> </div>
+          </div>
+        </div>
+
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-anaesthesiology" role="tabpanel" aria-labelledby="v-anaesthesiology-tab">
+        <div>
+          <p class="h4">ANAESTHESIOLOGY</p>
+          <p id="par1">The Department of Anaesthesia takes intense efforts to provide optimum clinical care to both
+            adult and children in the perioperative period. The services of Anesthetists are available round the clock
+            for all planned and emergency surgeries and procedures.</p>
+          <p id="par1">The operation theatres are equipped with modern Anaesthesia machines, Anaesthesia equipments,
+            multipara monitors, Fiber-optic endoscopes, Nerve locators for safe administration of general and regional
+            anesthesia.</p>
+        </div>
+        <div >
+          <div *ngFor="let data of fetcheddata" class="generalgrid">
+            <div> <img src="../../assets/images/hiclipart.com.png" alt="A doctor image"/><br> </div>
+            <div class="mt-4">
+            {{data.doctorname}} <br>
+            {{data.education}} <br>
+            {{data.visitinghrsfrom | date:'shortTime'}} to {{data.visitinghrsto | date:'shortTime' }}<br>
+            </div>
+            <div class="mt-5"><button class="btn btn-primary" (click)='bookAppointment()'>Book Appointment</button> </div>
+          </div>
+        </div>
+
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="vnb">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-general-surgery-tab" data-toggle="pill" href="#v-general-surgery" role="tab"
+        aria-controls="v-general-surgery" aria-selected="true" (click)="generalcall()">GENERAL SURGERY</a>
+      <a class="nav-link" id="v-ent-tab" data-toggle="pill" href="#v-ent" role="tab" aria-controls="v-ent"
+        aria-selected="false" (click)="entcall()">ENT</a>
+      <a class="nav-link" id="v-neurologist-tab" data-toggle="pill" href="#v-neurologist" role="tab"
+        aria-controls="v-neurologist" aria-selected="false" (click)="neurologycall()">NEUROLOGY</a>
+      <a class="nav-link" id="v-pulmonology-tab" data-toggle="pill" href="#v-pulmonology" role="tab"
+        aria-controls="v-pulmonology" aria-selected="false" (click)="pulmonologycall()">PULMONOLOGY</a>
+      <a class="nav-link" id="v-nephrologist-tab" data-toggle="pill" href="#v-nephrologist" role="tab"
+        aria-controls="v-nephrologist" aria-selected="false" (click)="nephrologycall()">NEPHROLOGY</a>
+      <a class="nav-link" id="v-urologist-tab" data-toggle="pill" href="#v-urologist" role="tab"
+        aria-controls="v-urologist" aria-selected="false" (click)="urologycall()">UROLOGY</a>
+      <a class="nav-link" id="v-anaesthesiology-tab" data-toggle="pill" href="#v-anaesthesiology" role="tab"
+        aria-controls="v-anaesthesiology" aria-selected="false" (click)="anaescall()">ANAESTHESIOLOGY</a>
+    </div>
+  </div>
+</div>

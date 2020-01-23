@@ -1,0 +1,47 @@
+
+  #container{
+    display: grid;
+    grid-template-columns:73% 27%;
+  }
+
+  .box{
+      box-sizing: border-box;
+      border: 1px solid black;
+      width: 370px;
+      max-height: 80%;
+  }
+
+  .reminderbox{
+    padding: 1em;
+  }
+
+  .remb{
+    margin-top: 4em;
+    margin-left: 1.5em;
+  }
+
+  body{
+    position: relative;
+  }
+
+  .btn{
+    width: 50%;
+  }
+
+  .form-control{
+    width: 35%;
+    margin-left: 3em;
+  }
+
+  form{
+    margin-left: 25em;
+    margin-top: 5em;
+  }
+
+  label{
+    margin-left: 3em;
+  }
+
+  #dropdown{
+    margin-left: 3em;
+  }

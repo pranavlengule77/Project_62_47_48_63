@@ -1,0 +1,27 @@
+<div class="modp">
+    <form id="form1" class="form-inline mt-md- p-5">
+        <input [(ngModel)]="mobile_no" name="searching" class="form-control mr-sm-2" type="text"
+          placeholder="Enter Patient's Mobile No" aria-label="Enter Patient's Mobile No">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="search()">Search Patient</button>
+    </form>
+    
+    <div id="patientlog">
+        <div *ngIf="messageFlag"  class="alert alert-warning" role="alert">
+            {{message}}
+        </div>
+        <table class="table table-bordered table-striped table-hover" id="tablepat" *ngIf="found">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Deletion </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ patient.patient_name }}</td>
+                    <td><button class="btn btn-secondary" (click)="delete()"> Delete Patient</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

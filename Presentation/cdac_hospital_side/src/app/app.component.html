@@ -1,0 +1,22 @@
+<div class="d-flex flex-column flex-md-row align-items-center bg-light border-bottom shadow-sm px-3">
+  <a href="#"><img src="../assets/images/logo.png"></a>
+  <p id="smh" class="h1 my-0 mr-md-auto font-weight-normal p-3">SAHYADRI MULTISPECIALITY HOSPITAL</p>
+  <nav *ngIf="isNavbarShown" class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" routerLink="">Reception</a>
+    <a class="p-2 text-dark" routerLink="admin">Admin</a>
+    <a class="p-2 text-dark" routerLink="doctor">Doctor</a>
+  </nav>
+  <button *ngIf="isLogoutShown" id="logout" class="btn btn-sm btn-danger" (click)="logout()" value="Logout">Logout</button>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<div>
+  <footer class="p-3 text-white bg-secondary border-top">
+    <div>
+      © 2019 Sahyadri Hospitals Ltd All Right Reserved
+    </div>
+  </footer>
+</div>

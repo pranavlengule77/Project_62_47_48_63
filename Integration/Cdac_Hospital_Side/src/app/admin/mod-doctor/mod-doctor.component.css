@@ -1,0 +1,22 @@
+.container{
+    padding-top: 2em;
+    padding-bottom: 26em;;
+}
+
+#form1{
+    margin-left: 20em;
+}
+
+#updatebtn{
+    margin-left: 9em;
+}
+
+.alert{
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.updfrm{
+   margin-left: 23em;
+}

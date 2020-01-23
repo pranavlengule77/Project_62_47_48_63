@@ -1,0 +1,74 @@
+<div class="container mt-5">
+    <div class="searchbar">
+        <input class="mr-3" type="text" id="searchId" name="doctorId" [(ngModel)]="doctorId">
+        <button id="btn" class=" btn btn-secondary" (click)="search()">Search</button>
+    </div>
+    <br>
+    <form class="updfrm" *ngIf="doctor != null" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <label for="Doctorid">Doctor id:</label>
+                <input type="text" class="form-control p-2" id="docid" placeholder="Doctorid" name="docid"
+                    [(ngModel)]="doctor.doctorid" [disabled]=true>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="Name">Name:</label>
+                <input type="text" class="form-control" id="Name" placeholder="Name" name="Name"
+                    [(ngModel)]="doctor.doctorname" [disabled]="true">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <label for="Speciality">Speciality:</label>
+                <input type="text" class="form-control" id="Speciality" placeholder="Speciality" name="Speciality"
+                    [(ngModel)]="doctor.speciality" [disabled]=true>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="Visitinghours">Visiting hours:</label>
+                <input type="text" class="form-control" id="Visitinghours" placeholder="Visiting hours"
+                    name="Visitinghours" [(ngModel)]="doctor.visitinghrs">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <label for="Education">Education:</label>
+                <input type="text" class="form-control" id="Education" placeholder="Education" name="Education"
+                    [(ngModel)]="doctor.education">
+            </div>
+        </div>
+        <br>
+        <button id="updatebtn" class="btn btn-sm btn-primary" type="submit">Update</button>
+    </form>
+</div>
+
+
+<!-- <div id="container">
+    <div>
+        <input class="inputFields" type="text" id="searchId" name="doctorId" [(ngModel)]="doctorId">
+        <button id="btn" class=" btn btn-primary" (click)="search()">Search</button>
+    </div>
+    <form class="updfrm" *ngIf="doctor != null" (ngSubmit)="onSubmit()">
+            <div id="leftdiv">
+                <label for="Doctorid">Doctor id:</label>
+                <input type="text" class="form-control p-2" id="docid" placeholder="Doctorid" name="docid"
+                    [(ngModel)]="doctor.doctorid" [disabled]=true>
+                <label for="Speciality">Speciality:</label>
+                <input type="text" class="form-control" id="Speciality" placeholder="Speciality" name="Speciality"
+                    [(ngModel)]="doctor.speciality" [disabled]=true>
+                <label for="Education">Education:</label>
+                <input type="text" class="form-control" id="Education" placeholder="Education" name="Education"
+                    [(ngModel)]="doctor.education">
+            </div>
+            <div id="rightdiv">
+                <label for="Name">Name:</label>
+                <input type="text" class="form-control" id="Name" placeholder="Name" name="Name"
+                    [(ngModel)]="doctor.doctorname" [disabled]="true">
+                <label for="Visitinghours">Visiting hours:</label>
+                <input type="text" class="form-control" id="Visitinghours" placeholder="Visiting hours" name="Visitinghours"
+                    [(ngModel)]="doctor.visitinghrs">
+            </div>
+            <br>
+        <button id="updatebtn" class="btn btn-lg btn-primary mr-md-auto btn-block justify-content-center"
+            type="submit">Update</button>
+    </form>
+</div> -->

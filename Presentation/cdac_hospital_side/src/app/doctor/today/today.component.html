@@ -1,0 +1,24 @@
+<div class="tablediv">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Appointment ID</th>
+                <th scope="col">Patient Name</th>
+                <th scope="col" colspan="2" style="text-align: center;">Session</th>
+            </tr>
+        </thead>
+        <tbody class="thead-light">
+            <tr *ngFor="let patient of todayData;">
+                <td>{{ patient.appointmentId }}</td>
+                <td>{{ patient.patientName }}</td>
+                <td>
+                    <button class="btn btn-secondary" id="{{'buttonStart' + patient.appointmentId}}" (click)="startAppointment(patient.appointmentId)"> Start </button>
+                    <span id="{{'time' + patient.appointmentId}}"></span>
+                </td>
+                <td>
+                    <button class="btn btn-secondary" id="{{'buttonCancel' + patient.appointmentId}}" (click)="cancelAppointment(patient.appointmentId)"> Cancel </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

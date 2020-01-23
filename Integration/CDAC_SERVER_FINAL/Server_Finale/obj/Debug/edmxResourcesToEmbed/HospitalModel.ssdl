@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CDAC_POLDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="appointment_data">
+    <Key>
+      <PropertyRef Name="appointment_id" />
+    </Key>
+    <Property Name="appointment_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="mobile_no" Type="bigint" Nullable="false" />
+    <Property Name="doctor_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="appointment_status" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="appointment_date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="appointment_id_factory">
+    <Key>
+      <PropertyRef Name="appointment_id" />
+    </Key>
+    <Property Name="appointment_id" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="doctor_data">
+    <Key>
+      <PropertyRef Name="doctor_id" />
+    </Key>
+    <Property Name="doctor_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="doctor_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="speciality_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="visiting_hrs" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="education" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="login_table">
+    <Key>
+      <PropertyRef Name="login_id" />
+    </Key>
+    <Property Name="login_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="login_password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="patient_data">
+    <Key>
+      <PropertyRef Name="mobile_no" />
+    </Key>
+    <Property Name="mobile_no" Type="bigint" Nullable="false" />
+    <Property Name="patient_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="email_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dob" Type="date" Nullable="false" />
+    <Property Name="gender" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="blood_group" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="speciality_data">
+    <Key>
+      <PropertyRef Name="speciality_name" />
+    </Key>
+    <Property Name="speciality_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="text" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CDAC_POLD.dbo.reception_view' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="reception_view">
+    <Key>
+      <PropertyRef Name="appointment_id" />
+      <PropertyRef Name="patient_name" />
+      <PropertyRef Name="doctor_name" />
+      <PropertyRef Name="appointment_date" />
+      <PropertyRef Name="appointment_status" />
+      <PropertyRef Name="speciality_name" />
+      <PropertyRef Name="visiting_hrs" />
+      <PropertyRef Name="doctor_id" />
+      <PropertyRef Name="mobile_no" />
+    </Key>
+    <Property Name="appointment_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="patient_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="doctor_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="appointment_date" Type="date" Nullable="false" />
+    <Property Name="appointment_status" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="speciality_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="visiting_hrs" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="doctor_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="mobile_no" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CDAC_POLD.dbo.specialities_view' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="specialities_view">
+    <Key>
+      <PropertyRef Name="speciality_name" />
+      <PropertyRef Name="doctor_name" />
+      <PropertyRef Name="visiting_hrs" />
+      <PropertyRef Name="education" />
+      <PropertyRef Name="doctor_id" />
+      <PropertyRef Name="description" />
+    </Key>
+    <Property Name="speciality_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="doctor_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="visiting_hrs" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="education" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="doctor_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="text" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_appointment_data_appointment_data">
+    <End Role="appointment_data" Type="Self.appointment_data" Multiplicity="1" />
+    <End Role="appointment_data1" Type="Self.appointment_data" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="appointment_data">
+        <PropertyRef Name="appointment_id" />
+      </Principal>
+      <Dependent Role="appointment_data1">
+        <PropertyRef Name="appointment_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_appointment_data_doctor_data">
+    <End Role="doctor_data" Type="Self.doctor_data" Multiplicity="1" />
+    <End Role="appointment_data" Type="Self.appointment_data" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="doctor_data">
+        <PropertyRef Name="doctor_id" />
+      </Principal>
+      <Dependent Role="appointment_data">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doctor_data_speciality_data">
+    <End Role="speciality_data" Type="Self.speciality_data" Multiplicity="1" />
+    <End Role="doctor_data" Type="Self.doctor_data" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="speciality_data">
+        <PropertyRef Name="speciality_name" />
+      </Principal>
+      <Dependent Role="doctor_data">
+        <PropertyRef Name="speciality_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CDAC_POLDModelStoreContainer">
+    <EntitySet Name="appointment_data" EntityType="Self.appointment_data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="appointment_id_factory" EntityType="Self.appointment_id_factory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="doctor_data" EntityType="Self.doctor_data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="login_table" EntityType="Self.login_table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="patient_data" EntityType="Self.patient_data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="speciality_data" EntityType="Self.speciality_data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="reception_view" EntityType="Self.reception_view" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [reception_view].[appointment_id] AS [appointment_id], 
+    [reception_view].[patient_name] AS [patient_name], 
+    [reception_view].[doctor_name] AS [doctor_name], 
+    [reception_view].[appointment_date] AS [appointment_date], 
+    [reception_view].[appointment_status] AS [appointment_status], 
+    [reception_view].[speciality_name] AS [speciality_name], 
+    [reception_view].[visiting_hrs] AS [visiting_hrs], 
+    [reception_view].[doctor_id] AS [doctor_id], 
+    [reception_view].[mobile_no] AS [mobile_no]
+    FROM [dbo].[reception_view] AS [reception_view]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="specialities_view" EntityType="Self.specialities_view" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [specialities_view].[speciality_name] AS [speciality_name], 
+    [specialities_view].[doctor_name] AS [doctor_name], 
+    [specialities_view].[visiting_hrs] AS [visiting_hrs], 
+    [specialities_view].[education] AS [education], 
+    [specialities_view].[doctor_id] AS [doctor_id], 
+    [specialities_view].[description] AS [description]
+    FROM [dbo].[specialities_view] AS [specialities_view]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_appointment_data_appointment_data" Association="Self.FK_appointment_data_appointment_data">
+      <End Role="appointment_data" EntitySet="appointment_data" />
+      <End Role="appointment_data1" EntitySet="appointment_data" />
+    </AssociationSet>
+    <AssociationSet Name="FK_appointment_data_doctor_data" Association="Self.FK_appointment_data_doctor_data">
+      <End Role="doctor_data" EntitySet="doctor_data" />
+      <End Role="appointment_data" EntitySet="appointment_data" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doctor_data_speciality_data" Association="Self.FK_doctor_data_speciality_data">
+      <End Role="speciality_data" EntitySet="speciality_data" />
+      <End Role="doctor_data" EntitySet="doctor_data" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,30 @@
+<div class="tablediv">
+    <div *ngIf="confirmFlag" class="alert alert-danger" role="alert">{{confirmation}}</div>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Appointment ID</th>
+                <th scope="col">Patient Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Confirmation</th>
+                <th scope="col">Cancellation</th>
+            </tr>
+        </thead>
+        <tbody class="thead-light">
+            <tr *ngFor="let patient of requestData">
+                <td>{{ patient.appointmentId }}</td>
+                <td>{{ patient.patientName }}</td>
+                <td>{{ patient.apptDate | date:'longDate' }}</td>
+                <td>
+                    <button class="btn btn-secondary" id="{{'buttonStart' + patient.appointmentId}}" (click)="confirmAppointmentRequests(patient.appointmentId)" > Confirm </button>
+                </td>
+                <td>
+                    <button class="btn btn-secondary" id="{{'buttonCancel' + patient.appointmentId}}" (click)="cancelAppointmentRequest(patient.appointmentId)"> Cancel </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="align-items-center">
+
+    </div>
+</div>

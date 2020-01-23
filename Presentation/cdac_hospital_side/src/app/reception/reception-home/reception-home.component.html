@@ -1,0 +1,35 @@
+<form id="form1" class="form-inline mt-3 mt-md- p-5">
+  <input [(ngModel)]="appointmentId" name="searching" class="form-control mr-sm-2" type="number"
+    placeholder="Enter Appointment ID" aria-label="Enter Appointment ID">
+  <button class="btn btn-outline-success my-2 my-sm-0" (click)="searchPatient()">Search Patient</button>
+</form>
+
+<div class="container">
+  <div *ngIf="notFoundFlag" class="alert alert-danger" role="alert">{{notFound}}</div>
+  <div class="table-responsive" >
+    <table class="table table-hover table-bordered" *ngIf="searchFlag">
+      <thead>
+        <tr>
+          <th>AppointmentId</th>
+          <th>PatientName</th>
+          <th>Doctorsname</th>
+          <th>Time</th>
+          <th>Date</th>
+          <th>Speciality</th>
+          <th>AppointmentStatus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ patient.appointmentId }}</td>
+          <td>{{ patient.patientName }}</td>
+          <td>{{ patient.doctorName }}</td>
+          <td>{{ patient.apptDate | date:'shortTime' }}</td>
+          <td>{{ patient.apptDate | date:'longDate' }}</td>
+          <td>{{ patient.speciality }}</td>
+          <td>{{ patient.appointmentStatus }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

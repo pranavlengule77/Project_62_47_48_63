@@ -1,0 +1,20 @@
+<div class="layout">
+    <div>
+        <router-outlet name='sidebaroutlet'></router-outlet>
+    </div>
+    <div class="sidebar" >
+        <nav style="align-self: center;">
+            <ul>
+                <li>
+                    <a [routerLink]= "[{ outlets: {sidebaroutlet: ['today']}}]">Today's Appointment</a>
+                </li>
+                <li>
+                    <a [routerLink]= "[{ outlets: { sidebaroutlet: ['future']}}]">Future Appointment</a>
+                </li>
+                <li>
+                    <a [routerLink]= "[{ outlets: { sidebaroutlet: ['requests']}}]">Appointment Requests</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

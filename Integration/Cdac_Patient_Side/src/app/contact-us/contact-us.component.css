@@ -1,0 +1,25 @@
+  #container{
+    display: grid;
+    grid-template-columns:40% 60%;
+    /* margin-bottom: 1em;
+    margin-right: 1em; */
+  }
+  
+  #par{
+    margin-top: 3em;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+
+  #cont{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    margin-top: 3em;
+  }
+
+  #con1{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-left: 2em;
+  }

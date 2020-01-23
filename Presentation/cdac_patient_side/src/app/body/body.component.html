@@ -1,0 +1,52 @@
+<div id="container">
+  <div>
+    <app-body-carousel></app-body-carousel>
+  </div>
+  <div>
+    <form class="form-signin align-items-center" (ngSubmit)="onSubmit()">
+      <img id="login-logo" src="../assets/images/hiclipart.com.png" />
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input
+        [(ngModel)]="username"
+        name="mobileNo"
+        type="email"
+        id="inputMobile"
+        class="form-control"
+        placeholder="Mobile No"
+        required
+        autofocus
+      />
+      <br />
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input
+        [(ngModel)]="password"
+        name="password"
+        type="password"
+        id="inputPassword"
+        class="form-control"
+        placeholder="Password"
+        required
+      />
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" /> Remember me
+        </label>
+      </div>
+      <div>
+        {{status}}
+      </div>
+      <p class="text-right"><a href="#">Forgot Password ?</a></p>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">
+        Sign in
+      </button>
+      <br />
+      <button
+        class="btn btn-lg btn-outline-primary btn-block"
+        routerLink="registration"
+      >
+        Register
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CDAC_POLDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="appointment_data">
+          <Key>
+            <PropertyRef Name="appointment_id" />
+          </Key>
+          <Property Name="appointment_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="mobile_no" Type="bigint" Nullable="false" />
+          <Property Name="doctor_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="appointment_status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="appointment_date" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="appointment_id_factory">
+          <Key>
+            <PropertyRef Name="appointment_id" />
+          </Key>
+          <Property Name="appointment_id" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="doctor_data">
+          <Key>
+            <PropertyRef Name="doctor_id" />
+          </Key>
+          <Property Name="doctor_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="doctor_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="speciality_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="visiting_hrs" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="education" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="login_table">
+          <Key>
+            <PropertyRef Name="login_id" />
+          </Key>
+          <Property Name="login_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="login_password" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="patient_data">
+          <Key>
+            <PropertyRef Name="mobile_no" />
+          </Key>
+          <Property Name="mobile_no" Type="bigint" Nullable="false" />
+          <Property Name="patient_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="dob" Type="date" Nullable="false" />
+          <Property Name="gender" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="blood_group" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="address" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="speciality_data">
+          <Key>
+            <PropertyRef Name="speciality_name" />
+          </Key>
+          <Property Name="speciality_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="description" Type="text" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'CDAC_POLD.dbo.reception_view' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="reception_view">
+          <Key>
+            <PropertyRef Name="appointment_id" />
+            <PropertyRef Name="patient_name" />
+            <PropertyRef Name="doctor_name" />
+            <PropertyRef Name="appointment_date" />
+            <PropertyRef Name="appointment_status" />
+            <PropertyRef Name="speciality_name" />
+            <PropertyRef Name="visiting_hrs" />
+            <PropertyRef Name="doctor_id" />
+            <PropertyRef Name="mobile_no" />
+          </Key>
+          <Property Name="appointment_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="patient_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="doctor_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="appointment_date" Type="date" Nullable="false" />
+          <Property Name="appointment_status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="speciality_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="visiting_hrs" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="doctor_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="mobile_no" Type="bigint" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'CDAC_POLD.dbo.specialities_view' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="specialities_view">
+          <Key>
+            <PropertyRef Name="speciality_name" />
+            <PropertyRef Name="doctor_name" />
+            <PropertyRef Name="visiting_hrs" />
+            <PropertyRef Name="education" />
+            <PropertyRef Name="doctor_id" />
+            <PropertyRef Name="description" />
+          </Key>
+          <Property Name="speciality_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="doctor_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="visiting_hrs" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="education" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="doctor_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="description" Type="text" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_appointment_data_appointment_data">
+          <End Role="appointment_data" Type="Self.appointment_data" Multiplicity="1" />
+          <End Role="appointment_data1" Type="Self.appointment_data" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="appointment_data">
+              <PropertyRef Name="appointment_id" />
+            </Principal>
+            <Dependent Role="appointment_data1">
+              <PropertyRef Name="appointment_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_appointment_data_doctor_data">
+          <End Role="doctor_data" Type="Self.doctor_data" Multiplicity="1" />
+          <End Role="appointment_data" Type="Self.appointment_data" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="doctor_data">
+              <PropertyRef Name="doctor_id" />
+            </Principal>
+            <Dependent Role="appointment_data">
+              <PropertyRef Name="doctor_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_doctor_data_speciality_data">
+          <End Role="speciality_data" Type="Self.speciality_data" Multiplicity="1" />
+          <End Role="doctor_data" Type="Self.doctor_data" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="speciality_data">
+              <PropertyRef Name="speciality_name" />
+            </Principal>
+            <Dependent Role="doctor_data">
+              <PropertyRef Name="speciality_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CDAC_POLDModelStoreContainer">
+          <EntitySet Name="appointment_data" EntityType="Self.appointment_data" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="appointment_id_factory" EntityType="Self.appointment_id_factory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="doctor_data" EntityType="Self.doctor_data" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="login_table" EntityType="Self.login_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="patient_data" EntityType="Self.patient_data" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="speciality_data" EntityType="Self.speciality_data" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="reception_view" EntityType="Self.reception_view" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [reception_view].[appointment_id] AS [appointment_id], 
+    [reception_view].[patient_name] AS [patient_name], 
+    [reception_view].[doctor_name] AS [doctor_name], 
+    [reception_view].[appointment_date] AS [appointment_date], 
+    [reception_view].[appointment_status] AS [appointment_status], 
+    [reception_view].[speciality_name] AS [speciality_name], 
+    [reception_view].[visiting_hrs] AS [visiting_hrs], 
+    [reception_view].[doctor_id] AS [doctor_id], 
+    [reception_view].[mobile_no] AS [mobile_no]
+    FROM [dbo].[reception_view] AS [reception_view]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="specialities_view" EntityType="Self.specialities_view" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [specialities_view].[speciality_name] AS [speciality_name], 
+    [specialities_view].[doctor_name] AS [doctor_name], 
+    [specialities_view].[visiting_hrs] AS [visiting_hrs], 
+    [specialities_view].[education] AS [education], 
+    [specialities_view].[doctor_id] AS [doctor_id], 
+    [specialities_view].[description] AS [description]
+    FROM [dbo].[specialities_view] AS [specialities_view]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_appointment_data_appointment_data" Association="Self.FK_appointment_data_appointment_data">
+            <End Role="appointment_data" EntitySet="appointment_data" />
+            <End Role="appointment_data1" EntitySet="appointment_data" />
+          </AssociationSet>
+          <AssociationSet Name="FK_appointment_data_doctor_data" Association="Self.FK_appointment_data_doctor_data">
+            <End Role="doctor_data" EntitySet="doctor_data" />
+            <End Role="appointment_data" EntitySet="appointment_data" />
+          </AssociationSet>
+          <AssociationSet Name="FK_doctor_data_speciality_data" Association="Self.FK_doctor_data_speciality_data">
+            <End Role="speciality_data" EntitySet="speciality_data" />
+            <End Role="doctor_data" EntitySet="doctor_data" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CDAC_POLDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="appointment_data">
+          <Key>
+            <PropertyRef Name="appointment_id" />
+          </Key>
+          <Property Name="appointment_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mobile_no" Type="Int64" Nullable="false" />
+          <Property Name="doctor_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="appointment_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="appointment_date" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="appointment_data1" Relationship="Self.FK_appointment_data_appointment_data" FromRole="appointment_data" ToRole="appointment_data1" />
+          <NavigationProperty Name="appointment_data2" Relationship="Self.FK_appointment_data_appointment_data" FromRole="appointment_data1" ToRole="appointment_data" />
+          <NavigationProperty Name="doctor_data" Relationship="Self.FK_appointment_data_doctor_data" FromRole="appointment_data" ToRole="doctor_data" />
+        </EntityType>
+        <EntityType Name="doctor_data">
+          <Key>
+            <PropertyRef Name="doctor_id" />
+          </Key>
+          <Property Name="doctor_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="doctor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="speciality_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="visiting_hrs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="education" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="appointment_data" Relationship="Self.FK_appointment_data_doctor_data" FromRole="doctor_data" ToRole="appointment_data" />
+          <NavigationProperty Name="speciality_data" Relationship="Self.FK_doctor_data_speciality_data" FromRole="doctor_data" ToRole="speciality_data" />
+        </EntityType>
+        <EntityType Name="login_table">
+          <Key>
+            <PropertyRef Name="login_id" />
+          </Key>
+          <Property Name="login_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="login_password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="patient_data">
+          <Key>
+            <PropertyRef Name="mobile_no" />
+          </Key>
+          <Property Name="mobile_no" Type="Int64" Nullable="false" />
+          <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dob" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="blood_group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="speciality_data">
+          <Key>
+            <PropertyRef Name="speciality_name" />
+          </Key>
+          <Property Name="speciality_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="doctor_data" Relationship="Self.FK_doctor_data_speciality_data" FromRole="speciality_data" ToRole="doctor_data" />
+        </EntityType>
+        <EntityType Name="reception_view">
+          <Key>
+            <PropertyRef Name="appointment_id" />
+            <PropertyRef Name="patient_name" />
+            <PropertyRef Name="doctor_name" />
+            <PropertyRef Name="appointment_date" />
+            <PropertyRef Name="appointment_status" />
+            <PropertyRef Name="speciality_name" />
+            <PropertyRef Name="visiting_hrs" />
+            <PropertyRef Name="doctor_id" />
+            <PropertyRef Name="mobile_no" />
+          </Key>
+          <Property Name="appointment_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="patient_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="doctor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="appointment_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="appointment_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="speciality_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="visiting_hrs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="doctor_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="mobile_no" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="specialities_view">
+          <Key>
+            <PropertyRef Name="speciality_name" />
+            <PropertyRef Name="doctor_name" />
+            <PropertyRef Name="visiting_hrs" />
+            <PropertyRef Name="education" />
+            <PropertyRef Name="doctor_id" />
+            <PropertyRef Name="description" />
+          </Key>
+          <Property Name="speciality_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="doctor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="visiting_hrs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="education" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="doctor_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_appointment_data_appointment_data">
+          <End Role="appointment_data" Type="Self.appointment_data" Multiplicity="1" />
+          <End Role="appointment_data1" Type="Self.appointment_data" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="appointment_data">
+              <PropertyRef Name="appointment_id" />
+            </Principal>
+            <Dependent Role="appointment_data1">
+              <PropertyRef Name="appointment_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_appointment_data_doctor_data">
+          <End Role="doctor_data" Type="Self.doctor_data" Multiplicity="1" />
+          <End Role="appointment_data" Type="Self.appointment_data" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="doctor_data">
+              <PropertyRef Name="doctor_id" />
+            </Principal>
+            <Dependent Role="appointment_data">
+              <PropertyRef Name="doctor_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_doctor_data_speciality_data">
+          <End Role="speciality_data" Type="Self.speciality_data" Multiplicity="1" />
+          <End Role="doctor_data" Type="Self.doctor_data" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="speciality_data">
+              <PropertyRef Name="speciality_name" />
+            </Principal>
+            <Dependent Role="doctor_data">
+              <PropertyRef Name="speciality_name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CDAC_POLDEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="appointment_data" EntityType="Self.appointment_data" />
+          <EntitySet Name="doctor_data" EntityType="Self.doctor_data" />
+          <EntitySet Name="login_table" EntityType="Self.login_table" />
+          <EntitySet Name="patient_data" EntityType="Self.patient_data" />
+          <EntitySet Name="speciality_data" EntityType="Self.speciality_data" />
+          <EntitySet Name="reception_view" EntityType="Self.reception_view" />
+          <EntitySet Name="specialities_view" EntityType="Self.specialities_view" />
+          <AssociationSet Name="FK_appointment_data_appointment_data" Association="Self.FK_appointment_data_appointment_data">
+            <End Role="appointment_data" EntitySet="appointment_data" />
+            <End Role="appointment_data1" EntitySet="appointment_data" />
+          </AssociationSet>
+          <AssociationSet Name="FK_appointment_data_doctor_data" Association="Self.FK_appointment_data_doctor_data">
+            <End Role="doctor_data" EntitySet="doctor_data" />
+            <End Role="appointment_data" EntitySet="appointment_data" />
+          </AssociationSet>
+          <AssociationSet Name="FK_doctor_data_speciality_data" Association="Self.FK_doctor_data_speciality_data">
+            <End Role="speciality_data" EntitySet="speciality_data" />
+            <End Role="doctor_data" EntitySet="doctor_data" />
+          </AssociationSet>
+          <EntitySet Name="appointment_id_factory" EntityType="CDAC_POLDModel.appointment_id_factory" />
+        </EntityContainer>
+        <EntityType Name="appointment_id_factory">
+          <Key>
+            <PropertyRef Name="appointment_id" />
+          </Key>
+          <Property Name="appointment_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CDAC_POLDModelStoreContainer" CdmEntityContainer="CDAC_POLDEntities">
+          <EntitySetMapping Name="appointment_data">
+            <EntityTypeMapping TypeName="CDAC_POLDModel.appointment_data">
+              <MappingFragment StoreEntitySet="appointment_data">
+                <ScalarProperty Name="appointment_id" ColumnName="appointment_id" />
+                <ScalarProperty Name="mobile_no" ColumnName="mobile_no" />
+                <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+                <ScalarProperty Name="appointment_status" ColumnName="appointment_status" />
+                <ScalarProperty Name="appointment_date" ColumnName="appointment_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="doctor_data">
+            <EntityTypeMapping TypeName="CDAC_POLDModel.doctor_data">
+              <MappingFragment StoreEntitySet="doctor_data">
+                <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+                <ScalarProperty Name="doctor_name" ColumnName="doctor_name" />
+                <ScalarProperty Name="speciality_name" ColumnName="speciality_name" />
+                <ScalarProperty Name="visiting_hrs" ColumnName="visiting_hrs" />
+                <ScalarProperty Name="education" ColumnName="education" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="login_table">
+            <EntityTypeMapping TypeName="CDAC_POLDModel.login_table">
+              <MappingFragment StoreEntitySet="login_table">
+                <ScalarProperty Name="login_id" ColumnName="login_id" />
+                <ScalarProperty Name="login_password" ColumnName="login_password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="patient_data">
+            <EntityTypeMapping TypeName="CDAC_POLDModel.patient_data">
+              <MappingFragment StoreEntitySet="patient_data">
+                <ScalarProperty Name="mobile_no" ColumnName="mobile_no" />
+                <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+                <ScalarProperty Name="email_id" ColumnName="email_id" />
+                <ScalarProperty Name="dob" ColumnName="dob" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="blood_group" ColumnName="blood_group" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="speciality_data">
+            <EntityTypeMapping TypeName="CDAC_POLDModel.speciality_data">
+              <MappingFragment StoreEntitySet="speciality_data">
+                <ScalarProperty Name="speciality_name" ColumnName="speciality_name" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="reception_view">
+            <EntityTypeMapping TypeName="CDAC_POLDModel.reception_view">
+              <MappingFragment StoreEntitySet="reception_view">
+                <ScalarProperty Name="mobile_no" ColumnName="mobile_no" />
+                <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+                <ScalarProperty Name="appointment_id" ColumnName="appointment_id" />
+                <ScalarProperty Name="patient_name" ColumnName="patient_name" />
+                <ScalarProperty Name="doctor_name" ColumnName="doctor_name" />
+                <ScalarProperty Name="appointment_date" ColumnName="appointment_date" />
+                <ScalarProperty Name="appointment_status" ColumnName="appointment_status" />
+                <ScalarProperty Name="speciality_name" ColumnName="speciality_name" />
+                <ScalarProperty Name="visiting_hrs" ColumnName="visiting_hrs" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="specialities_view">
+            <EntityTypeMapping TypeName="CDAC_POLDModel.specialities_view">
+              <MappingFragment StoreEntitySet="specialities_view">
+                <ScalarProperty Name="speciality_name" ColumnName="speciality_name" />
+                <ScalarProperty Name="doctor_name" ColumnName="doctor_name" />
+                <ScalarProperty Name="visiting_hrs" ColumnName="visiting_hrs" />
+                <ScalarProperty Name="education" ColumnName="education" />
+                <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="appointment_id_factory">
+            <EntityTypeMapping TypeName="CDAC_POLDModel.appointment_id_factory">
+              <MappingFragment StoreEntitySet="appointment_id_factory">
+                <ScalarProperty Name="appointment_id" ColumnName="appointment_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

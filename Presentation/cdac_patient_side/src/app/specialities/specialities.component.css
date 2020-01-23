@@ -1,0 +1,43 @@
+#container{
+  display: grid;
+  grid-template-columns:73% 27%;
+}
+
+.vnb{
+   margin-top: 2em;
+}
+
+a{
+  text-align: center;
+  color: dimgray;
+  
+}
+
+.nav-link
+{
+  background-color: lightgrey;
+  margin-top: 1em;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.tab-pane{
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-right: 3em;
+}
+
+#par1{
+  margin-top: 1em;
+  text-align: justify;
+}
+
+body{
+  position: relative;
+}
+
+.generalgrid{
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 100%;
+}

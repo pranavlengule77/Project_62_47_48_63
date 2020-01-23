@@ -1,0 +1,344 @@
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.dll.config
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.pdb
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.exe
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.exe.config
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.rsp
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.exe
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.exe.config
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.rsp
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.AppContext.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Collections.Immutable.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Console.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Compression.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.FileSystem.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Pipes.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Reflection.Metadata.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.AccessControl.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Claims.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Principal.Windows.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.ValueTuple.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XPath.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.exe
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.exe.config
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.rsp
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\VBCSCompiler.exe
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\VBCSCompiler.exe.config
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Antlr3.Runtime.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.SqlServer.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Core.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Logging.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Tokens.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Cookies.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Jwt.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.OAuth.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Web.Infrastructure.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Newtonsoft.Json.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Owin.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Net.Http.Formatting.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Cors.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Helpers.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.Cors.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.WebHost.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Mvc.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Optimization.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Razor.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Deployment.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Razor.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\WebGrease.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.SqlServer.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Core.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Logging.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Tokens.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Cookies.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Jwt.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.OAuth.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Net.Http.Formatting.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.Cors.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Newtonsoft.Json.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Helpers.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.WebHost.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Mvc.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Optimization.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Razor.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Deployment.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Razor.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Antlr3.Runtime.pdb
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.csprojAssemblyReference.cache
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.csproj.CoreCompileInputs.cache
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.csproj.CopyComplete
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.dll
+D:\CDAC + GRE\Learning\Server side\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.pdb
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.dll.config
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.pdb
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.exe
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.exe.config
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.rsp
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.exe
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.exe.config
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.rsp
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.Managed.Core.targets
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.AppContext.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Collections.Immutable.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Console.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Compression.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.FileSystem.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Pipes.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Reflection.Metadata.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.AccessControl.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Claims.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Principal.Windows.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.ValueTuple.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XmlDocument.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XPath.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.exe
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.exe.config
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.rsp
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\VBCSCompiler.exe
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\VBCSCompiler.exe.config
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Antlr3.Runtime.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.SqlServer.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Core.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Logging.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Tokens.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Cookies.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Jwt.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.OAuth.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Web.Infrastructure.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Newtonsoft.Json.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Owin.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Net.Http.Formatting.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Cors.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Helpers.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.Cors.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.WebHost.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Mvc.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Optimization.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Razor.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Deployment.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Razor.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\WebGrease.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.SqlServer.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Core.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Logging.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Tokens.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Cookies.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Jwt.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.OAuth.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Net.Http.Formatting.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.Cors.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Newtonsoft.Json.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Helpers.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.WebHost.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Mvc.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Optimization.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Razor.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Deployment.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Razor.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Antlr3.Runtime.pdb
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.csprojResolveAssemblyReference.cache
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.dll
+D:\oMKAR\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.pdb
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.dll.config
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Server_Finale.pdb
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.exe
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.exe.config
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csc.rsp
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.exe
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.exe.config
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\csi.rsp
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.AppContext.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Console.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Compression.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Claims.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.ValueTuple.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.exe
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.exe.config
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\vbc.rsp
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\VBCSCompiler.exe
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Antlr3.Runtime.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.SqlServer.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Jwt.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Newtonsoft.Json.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Owin.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Net.Http.Formatting.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Cors.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Helpers.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.Cors.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.WebHost.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Mvc.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Optimization.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Razor.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Razor.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\WebGrease.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\EntityFramework.SqlServer.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.Jwt.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Net.Http.Formatting.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.Cors.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Newtonsoft.Json.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Helpers.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Http.WebHost.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Mvc.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Optimization.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.Razor.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\System.Web.WebPages.Razor.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Antlr3.Runtime.pdb
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.csprojResolveAssemblyReference.cache
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.dll
+C:\Users\Pranav\Desktop\cdac_project\New folder\Final Integrated Project\CDAC_SERVER_FINAL\Server_Finale\obj\Debug\Server_Finale.pdb
